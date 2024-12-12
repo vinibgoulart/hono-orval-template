@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "@hono/swagger-ui": "^0.5.0",
+    "@hono/zod-openapi": "^0.18.3",
+    "@types/dotenv-safe": "^8.1.6",
+    "bcrypt": "^5.1.1",
+    "dotenv-safe": "^9.1.0",
+    "hono": "^4.6.13",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}
