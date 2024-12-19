@@ -1,0 +1,15 @@
+{
+  "name": "crypto-alert",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "be:all": "turbo dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "packageManager": "yarn@1.22.22"
+}

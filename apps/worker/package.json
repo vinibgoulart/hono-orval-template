@@ -1,0 +1,25 @@
+{
+  "name": "@crypto-alert/worker",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@crypto-alert/jobs": "*",
+    "@types/dotenv-safe": "^8.1.6",
+    "amqplib": "^0.10.5",
+    "dotenv-safe": "^9.1.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.8.4",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.6",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.11.17",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.7.1"
+  }
+}
