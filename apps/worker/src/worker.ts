@@ -1,9 +1,11 @@
 import amqp from "amqplib";
 import { config } from "./config";
 import { MAIN_QUEUE, QueueContent } from "@crypto-alert/jobs";
+import { connectMongo } from "@crypto-alert/mongo";
 
 export const initWorker = async () => {
   try {
+    await connectMongo();
     const connection = await amqp.connect(config.RABBITMQ_URL!);
     const channel = await connection.createChannel();
 
